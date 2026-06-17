@@ -4,91 +4,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Оригами и капибары</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.7;
+  }
 
-    header {
-      text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #2563eb, #7c3aed);
-    }
+  header {
+    text-align: center;
+    padding: 100px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+  }
 
+  header h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 20px auto 0;
+    color: #555;
+  }
+
+  section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+  }
+
+  h2 {
+    color: #111;
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.2s;
+  }
+
+  .card:hover {
+    border-color: #111;
+  }
+
+  .contact {
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    padding: 30px;
+    border-radius: 8px;
+  }
+
+  a {
+    color: #111;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  button {
+    background: #111;
+    border: 1px solid #111;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: white;
+    color: #111;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  @media (max-width: 768px) {
     header h1 {
-      margin: 0;
-      font-size: 42px;
-    }
-
-    header p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
-
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
+      font-size: 36px;
     }
 
     h2 {
-      color: #60a5fa;
-      margin-bottom: 20px;
+      font-size: 28px;
     }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      background: #273449;
-    }
-
-    .contact {
-      background: #111827;
-      padding: 30px;
-      border-radius: 12px;
-    }
-
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      opacity: 0.6;
-      font-size: 14px;
-    }
-
-    button {
-      background: #2563eb;
-      border: none;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #1d4ed8;
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
